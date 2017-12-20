@@ -1,9 +1,33 @@
+Як позбавитися Windows за один день
+===================================
+
 Це книга, яка покликана допомогти новачкам якнайпростіше перейти на використання ОС Лінукс.
 
-# Необхідний інструментарій #
+Необхідний інструментарій для редагування
+-----------------------------------------
 
-sudo npm install markdown-pdf
+Найлегше редагувати утилітою retext. Вона підтримує попередній перегляд. Але цілком можна обійтися й звичайним текстовим редактором. Наприлкад scite.
 
-# Герерація книги в форматі pdf #
+    sudo apt-get install retext
 
-markdown-pdf ./md/*.md -o howgetridofwindowsinaday.pdf
+Герерація книги в форматі pdf
+-----------------------------
+
+Для генерації використовується markdown-pdf. Його встановлення за умови повноцінного node.js просте:
+
+    sudo npm install -g markdown-pdf
+
+Для Ubuntu 16.04 краще використати nvm (інструкція на сайті https://github.com/creationix/nvm#install-script) та встановити LTS версію node.js:
+
+    wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+
+Перевідкрийте термінал і продовжіть встановлення markdown-pdf
+
+    nvm install --lts
+    npm install -g markdown-pdf
+
+Після цього можна використовувати генератор:
+
+    cd md && markdown-pdf ./*.md -o ../ec11book.pdf -s ../pdf.css -h ../runnings.js
+
+Для простоти генерації створено makefile, тому команда спрощується до просто `make`
