@@ -16,7 +16,7 @@ Permission is granted to copy, distribute and/or modify this document under the 
 
 Робота є спільною і перелік авторів, які внесли свою працю буде оновлюватися тут:
 
-[Serg Stetsuk](http://github.com/sergstetsuk) <serg_stetsuk@ukr.net>
+  - [Serg Stetsuk](http://github.com/sergstetsuk) <serg_stetsuk@ukr.net>
 
 ## Аудиторія ##
 
