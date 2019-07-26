@@ -10,7 +10,7 @@ exports.footer =
 {
     height: "1cm",
     contents: function(pageNum, numPages) {
-        return "<hr/><h6>GNU GPLv2 <span style='float:right'>" + pageNum + "</span></h6>";
+        return "<hr/><h6>GNU GFDL <a>https://www.gnu.org/licenses/fdl.html</a> <span style='float:right'>" + pageNum + "</span></h6>";
     }
 }
 
