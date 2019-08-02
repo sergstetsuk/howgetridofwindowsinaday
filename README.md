@@ -16,7 +16,6 @@
 Для генерації використовується markdown-pdf з плагіном remarkable-classy. Їхнє встановлення за умови повноцінного node.js просте:
 
     sudo npm install -g markdown-pdf remarkable-classy
-    sudo npm install -g markdown-it-pdf remarkable-it-classy
 
 Сам node.js також можна встановити з репозиторіїв:
 
@@ -47,4 +46,10 @@
 
 Для простоти генерації створено makefile, тому команда спрощується до просто 
 
-    make
+    make pdf
+
+markdown-it HTML
+----------------
+
+    sudo npm install -g markdown-it-pdf markdown-it markdown-it-classy
+    make html
