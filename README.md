@@ -30,7 +30,7 @@
     nvm install --lts
     npm install -g markdown-pdf
 
-Щоб повноцінно генерувати PDF слід додати налаштування в секцію opts файлу /usr/local/bin/markdown-pdf:
+Щоб повноцінно генерувати PDF вручну, cлід додати налаштування в секцію opts файлу /usr/local/bin/markdown-pdf:
 
     remarkable: {
         html: true,
